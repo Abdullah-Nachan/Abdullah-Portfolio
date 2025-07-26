@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah - Web Developer Portfolio</title>
+    <meta name="description" content="Abdullah - Web Developer Portfolio showcasing modern web development skills" />
+    <meta name="author" content="Abdullah" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Spline 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="Abdullah - Web Developer Portfolio" />
+    <meta property="og:description" content="Creating immersive digital experiences with cutting-edge technologies" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">ABDULLAH</h1>
+            <p class="loading-subtitle">WEB DEVELOPER</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p class="progress-text" id="progress-text">100%</p>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Navigation -->
+        <nav id="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>ABDULLAH</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" onclick="scrollToSection('home')">Home</a>
+                    <a href="#about" onclick="scrollToSection('about')">About</a>
+                    <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                    <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+                </div>
+                <button class="hire-me-btn" onclick="scrollToSection('contact')">Hire Me</button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home" onclick="scrollToSection('home')">Home</a>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+                <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Floating Background Elements -->
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- 3D Background -->
+            <div class="hero-background">
+                <iframe 
+                    src='https://my.spline.design/orb-XuJfXyeX9v6IoyPwAjMaTsgV/' 
+                    frameborder='0' 
+                    width='100%' 
+                    height='100%'
+                    title="3D Orb Background">
+                </iframe>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line-white">Hi, I'm</span>
+                            <span class="title-line-gradient">Abdullah</span>
+                        </h1>
+                        <p class="hero-subtitle">Web Developer</p>
+                        <p class="hero-description">
+                            Creating immersive digital experiences with cutting-edge technologies, pixel-perfect designs, and powerful animations.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                                <span>Hire Me</span>
+                                <i class="ph ph-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Get to know me</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-left">
+                        <div class="profile-container">
+                            <div class="profile-decorations">
+                                <div class="decoration-orb orb-cyan"></div>
+                                <div class="decoration-orb orb-purple"></div>
+                                <div class="decoration-orb orb-pink"></div>
+                            </div>
+                            <div class="profile-frame">
+                                <img src="public/lovable-uploads/f19680b0-e3ff-40ec-9b9b-2bd7bfdbb355.png" alt="Abdullah Profile" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <p class="about-description">
+                            I'm a passionate web developer specializing in creating immersive digital 
+                            experiences. With expertise in modern frameworks and cutting-edge 
+                            technologies, I focus on building applications that not only look 
+                            stunning but also provide seamless user experiences with 
+                            pixel-perfect results.
+                        </p>
+                        <p class="about-focus">
+                            My focus is on performance, accessibility, and creating user interfaces that 
+                            are only look incredible but also provide seamless user experience across 
+                            all devices.
+                        </p>
+                        
+                        <div class="skills-technologies">
+                            <h4>Skills & Technologies</h4>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-code"></i>
+                                    </div>
+                                    <span>Frontend</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-database"></i>
+                                    </div>
+                                    <span>React/Next.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-palette"></i>
+                                    </div>
+                                    <span>UI/UX</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-device-mobile"></i>
+                                    </div>
+                                    <span>Mobile-first</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-gear"></i>
+                                    </div>
+                                    <span>DevOps</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-rocket"></i>
+                                    </div>
+                                    <span>Backend</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-translate"></i>
+                                    </div>
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="ph ph-lightning"></i>
+                                    </div>
+                                    <span>Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years Exp</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">My Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-1.png" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://abdullah-nachan.github.io/Aziz-Phone-Hub/" class="project-link" target="_blank">
+                                        <i class="ph ph-arrow-square-out"></i>
+                                    </a>
+                                    <a href="https://github.com/Abdullah-Nachan/Aziz-Phone-Hub" class="project-link" target="_blank">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A modern e-commerce solution with advanced filtering, payment integration, and real-time inventory management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Razorpay</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-2.png" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://abdullah-nachan.github.io/Admin-Panel/" class="project-link" target="_blank">
+                                        <i class="ph ph-arrow-square-out"></i>
+                                    </a>
+                                    <a href="https://github.com/Abdullah-Nachan/Admin-Panel" class="project-link" target="_blank">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative task management tool with real-time updates, team chat, and progress tracking features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-4.jpg" alt="Business Promotion">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://abdullah-nachan.github.io/Business-promotion/" class="project-link" target="_blank">
+                                        <i class="ph ph-arrow-square-out"></i>
+                                    </a>
+                                    <a href="https://github.com/Abdullah-Nachan/Business-promotion" class="project-link" target="_blank">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Business Promotion</h3>
+                            <p>An interactive platform to promote your business online, featuring marketing tools, analytics, and social media integration for maximum reach.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Marketing</span>
+                                <span class="tech-tag">Analytics</span>
+                                <span class="tech-tag">Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Let's connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together</h3>
+                        <p>
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:abdullah@example.com" class="contact-link">
+                                <div class="contact-icon">
+                                    <i class="ph ph-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">nachanabdullah123@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+1234567890" class="contact-link">
+                                <div class="contact-icon">
+                                    <i class="ph ph-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">+91 7219345601</span>
+                                </div>
+                            </a>
+                            <a href="https://www.fiverr.com/abdullah_nachan" class="contact-link">
+                                <div class="contact-icon">
+                                    <i class="ph ph-briefcase"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Fiverr</span>
+                                    <span class="contact-value">fiverr.com/abdullah_nachan</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h3>Abdullah</h3>
+                        <p>Creating digital experiences with passion and precision.</p>
+                    </div>
+                    <div class="footer-right">
+                        <div class="social-links">
+                            <a href="https://github.com/Abdullah-Nachan" class="social-link" target="_blank">
+                                <i class="ph ph-github-logo"></i>
+                            </a>
+                            <a href="https://www.fiverr.com/abdullah_nachan" class="social-link" target="_blank">
+                                <i class="ph ph-briefcase"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Abdullah. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scroll-top" class="scroll-top" onclick="scrollToTop()">
+            <i class="ph ph-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
